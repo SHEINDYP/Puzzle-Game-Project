@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../JS/game2.js"></script>
+    <link rel="stylesheet" href="../CSS/game.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Game</title>
+</head>
+
+<body onload="create_mat()">
+    <!-- option to click anywhere on the page to close the game window-->
+    <div onclick="closeModal()">&times;>
+
+        <div id="bimg"></div>
+
+        <div id="game">
+            <div id="board"></div>
+            <div class="footer">
+                <button onclick="reset()">Reset</button>
+                <span id="moves">Moves: 0</span>
+            </div>
+        </div>
+
+        <div><img id="eximg" src="../img/מיקי/מיקי ומיני מאוס.jpg"></div>
+        <div class="icon">
+            <a href="../index.html" class="icon" class="active"><i class="fa fa-home"></i></a>
+        </div>
+
+        <!-- dynamic window to end the game-->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <p id="f">YOU WIN</p>
+            </div>
+        </div>
+        <audio id="sound" src="../img/e24612.mp3"></audio>
+        <div>
+
+        </div>
+</body>
+
+</html>

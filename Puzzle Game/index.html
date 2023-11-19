@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <script src="./JS/gamee.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Game</title>
+</head>
+<body>
+  <div>
+    <h1 data-shadow="Puzzle Game">
+      Puzzle     Game
+    </h1>
+  </div>
+
+  <span id="bimg"></span>
+
+<div class="grid">
+
+   <div class="grid-item">
+     <a href="./HTML/game1.html"> 
+    <img class="img" src="./img/אימוגי/אימוגיי.webp">
+  </a>
+ <h4 class="h4">5x5</h4> 
+   </div>
+
+   <div class="grid-item">
+   <a href="./HTML/game2.html">
+    <img class="img" src="./img/מיקי/מיקי ומיני מאוס.jpg">
+  </a>
+  <h4 class="h4">4x4</h4>
+  </div>
+
+ <div class="grid-item">
+  <a href="./HTML/game.html">
+    <img class="img" src="./img/מניונים/מניונים.jpg" >
+  </a>
+  <h4 class="h4">3x3</h4>
+ </div>
+
+</div>
+
+<button id="button" onclick="openModal()">!</button>
+
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h2 style="text-shadow: 0 0 3px #3a0872, 0 0 8px #3c0333;">Puzzle Game</h2>
+    <h3 >מטרת המשחק:</h3>
+   <p>לסדר את האריחים על ידי ביצוע מהלכי הזזה המשתמשים בחלל הריק.</p>
+   <h3>הוראות:</h3>
+   <p>נתון לוח משחק עם תמונות,
+על השחקן לסדר את התמונות במקום בעזרת תמונת העזר.
+ניתן להחליף את התמונה הרצויה במקום הריק ולא להפך! </p>
+<h3>מקשי המשחק: עכבר.</h3>
+<h2 style="text-shadow: 0 0 3px #3a0872, 0 0 8px #3c0333;">בהצלחה!!</h2>
+  </div>
+</div>
+
+</body>
+</html>

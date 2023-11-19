@@ -1,0 +1,189 @@
+#bimg {
+  background-image: url(../img/רקע2.jfif);
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-size: cover;
+  z-index: -1;
+}
+
+#game {
+  display: inline-table;
+}
+
+#board {
+  margin-top: 5%;
+  display: flex;
+  margin-left: 10%;
+}
+
+.footer span {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(61, 4, 49);
+  font-weight: bolder;
+  padding-top: 2%;
+  padding-right: 18%;
+  padding-left: 5%;
+  width: 40%;
+  border-left: 1px solid black;
+}
+
+.footer {
+  margin-top: 5px;
+  margin-left: 25%;
+  display: flex;
+  /* מרווח שווה בין כל הפריטים הנמצאים בפוטר    */
+  justify-content: space-between;
+  width: 70%;
+}
+
+.footer button {
+  font-weight: bolder;
+  padding-top: 0%;
+  padding-left: 5%;
+  width: 30%;
+  background-color: rgb(57, 6, 47);
+  color: rgb(247, 237, 245);
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 9px rgba(172, 4, 158, 0.361);
+}
+
+.footer button:hover {
+  color: #ed1b9c;
+  background-color: rgba(241, 63, 230, 0.466);
+}
+
+.footer button:active {
+  background-color: #740c69;
+  box-shadow: 0 5px rgba(110, 4, 103, 0.349);
+  transform: translateY(5px);
+}
+
+#eximg {
+  height: 14em;
+  width: 16em;
+  margin-left: 50%;
+  top: 25%;
+  position: absolute;
+  border-radius: 3%;
+  border: 1px solid rgb(69, 67, 67);
+  display: inline-block;
+}
+
+@media (max-width: 1200px) {
+  body {
+    overflow-x: scroll;
+  }
+
+  #eximg {
+    position: relative;
+    display: inline-block;
+    left: 0;
+  }
+}
+
+.icon {
+  width: 8em;
+  overflow: auto;
+  position: fixed;
+  padding-left: 86%;
+  top: 2%;
+
+}
+
+
+.icon a {
+  float: left;
+  width: 2em;
+  text-align: center;
+  padding: 12px 0;
+  color: white;
+  font-size: 60px;
+  border-radius: 25%;
+}
+
+.icon a:hover {
+  background-color: rgb(64, 2, 40);
+}
+
+/* חלון סיום משחק */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 5%;
+  top: 3%;
+  width: 100%;
+  height: 170%;
+  overflow: auto;
+  background-color: rgba(52, 52, 52, 0);
+}
+
+.modal-content {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  direction: rtl;
+}
+
+/* font won */
+p {
+  font-family: "VT323";
+  font-size: 12em;
+  text-align: center;
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0% {
+    color: rgb(121, 6, 77);
+    text-shadow: 0 0 20px rgb(154, 21, 138);
+  }
+
+  25% {
+    color: rgb(155, 21, 113);
+    text-shadow: 2px 2px 2px rgb(36, 2, 30);
+    transform: translate(-2px, 1px);
+  }
+
+  40% {
+    color: rgb(113, 43, 86);
+    text-shadow: none;
+    transform: translate(0, 0);
+  }
+
+  50% {
+    color: rgb(78, 5, 49);
+    text-shadow: 5px 5px 2px rgb(248, 35, 241), -5px -5px 2px rgb(155, 28, 206);
+    transform: translate(0px, 5px);
+  }
+
+  70% {
+    color: rgb(127, 87, 141);
+    text-shadow: none;
+    transform: translate(0, 0);
+  }
+
+  80% {
+    color: rgb(94, 27, 84);
+    text-shadow: 0 0 20px rgb(63, 23, 54);
+    transform: translate(-2px, 1px);
+  }
+
+  100% {
+    color: rgb(100, 4, 73);
+    text-shadow: none;
+  }
+}
